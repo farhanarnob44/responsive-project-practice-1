@@ -6,3 +6,113 @@
   font-weight: 400;
   font-style: normal;
 }
+main > section {
+    margin-top: 130px;
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* shared styles ended here  */
+
+/* header styles are here  */
+.bg-colors{
+    background-color: rgba(255, 144, 14, 0.1);
+    size: cover;
+}
+
+/* nav bar related styles are here  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    text-decoration: none;
+
+}
+.brand{
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.nav-item{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-links{
+    display: flex;
+}
+/* Dark 02  */
+.text-gray{
+    color: rgb(66, 66, 66);
+}
+.banner , .navbar{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner related styles  */
+.banner-content{
+    max-width:850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 4rem;
+}
+.btn-primary{
+    border-radius: 8px;
+
+background-color: rgb(255, 144, 14);
+color: white;
+padding:20px 25px;
+font-size: 1.25rem;
+font-weight: 600;
+
+}
+.banner-image{
+    width: 100%;
+}
+/* responsive media query  */
+@media screen and (max-width: 576px){
+    .nav-item , .nav-links, .teams{
+        flex-direction: column;
+    }
+    /* .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    } */
+    .team-image-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.teams{
+    display: flex;
+    align-items: center;
+}
+.team-image-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+.our-features{
+    margin-left: 130px;
+    max-width: 468px;
+    height: 186px;
+}
+#quick-list{
+    color: rgb(114, 114, 114);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#our{
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#features{
+    color: rgb(255, 144, 14);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
