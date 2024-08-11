@@ -75,44 +75,87 @@ font-weight: 600;
 .banner-image{
     width: 100%;
 }
-/* responsive media query  */
-@media screen and (max-width: 576px){
-    .nav-item , .nav-links, .teams{
-        flex-direction: column;
-    }
-    /* .team-image-container{
-        grid-template-columns: repeat(1, 1fr);
-    } */
-    .team-image-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
+/* teams consulting  */
+
 .teams{
     display: flex;
-    align-items: center;
 }
-.team-image-container{
+.team-img-container{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2 , 1fr);
     gap: 24px;
 }
 .our-features{
-    margin-left: 130px;
-    max-width: 468px;
-    height: 186px;
+    margin-left: 100px;
+    max-width: 530px;
+    align-items: center;
+    padding-top: 250px;
 }
-#quick-list{
-    color: rgb(114, 114, 114);
+.list{
+    color: #727272;
+    font-size: 45px;
+}
+.our{
+    color: black;
+    font-size: 45px;
+}
+.features{
+    color: orange;
+    font-size: 45px
+}
+/* facts related styles are here  */
+.fact{
+    border: 1px solid orange;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+}
+.fact-number{
     font-size: 2.8rem;
-    font-weight: 700;
+    font-weight: 600;
 }
-#our{
-    color: rgb(19, 19, 19);
-    font-size: 2.8rem;
-    font-weight: 700;
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
-#features{
-    color: rgb(255, 144, 14);
-    font-size: 2.8rem;
-    font-weight: 700;
+/* responsive media query  */
+@media screen and (max-width: 576px){
+    .nav-item , .nav-links {
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%; 
+        margin-left: 20px;
+    } 
+
+    .our-features{
+        margin: -150px 0px 0px 20px;
+
+
+    }
+    
 }
+@media screen and (max-width: 888px){
+    .nav-item , .nav-links {
+        flex-direction: column;
+    }
+    .teams{
+        flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%; 
+        margin-left: 20px;
+    } 
+
+    .our-features{
+        margin: -150px 0px 0px 20px;
+    }
+    
+}
+/* responsive media query ends here  */
+
